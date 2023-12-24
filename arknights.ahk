@@ -20,6 +20,8 @@ retreat_y := 320
 speed_x := 1644
 speed_y := 80
 
+#IfWinActive ahk_class CROSVM_1
+
 x::
  {
    mousegetpos, start_x, start_y
@@ -45,3 +47,5 @@ z::
    mousemove, %start_x%, %start_y%, 0
  }
 return
+
+#IfWinActive
